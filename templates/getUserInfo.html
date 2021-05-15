@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User info</title>
+  </head>
+  <body>
+    <form action="/" method="POST">
+      <h1>Detials</h1>
+      <p>Getting user name with address info.</p>
+      <hr />
+
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Your Name" name="name" id="name" />
+      <hr />
+
+      <label for="address_no"><b>Address</b></label>
+      <input
+        type="text"
+        placeholder="24,12 cross,sakthi nagar"
+        name="address"
+        id="address_no"
+      />
+      <hr />
+
+      <label for="address_area"><b>Area</b></label>
+      <input
+        type="text"
+        placeholder="Mudhaliarpet"
+        name="area"
+        id="address_area"
+      />
+      <hr />
+
+      <label for="address_city"><b>City</b></label>
+      <input type="text" placeholder="Chennai" name="city" id="address_city" />
+      <hr />
+
+      <label for="address_country"><b>Country</b></label>
+      <input
+        type="text"
+        placeholder="India"
+        name="country"
+        id="address_country"
+      />
+      <hr />
+
+      <label for="address_pincode"><b>Pincode</b></label>
+      <input
+        type="text"
+        placeholder="600 005"
+        name="pincode"
+        id="address_pincode"
+      />
+      <hr />
+
+      <p>->DB</p>
+      <br />
+      <button type="submit" value="add" name="button">Add</button>
+
+      <button type="submit" value="map" name="button">Check map</button>
+    </form>
+  </body>
+</html>

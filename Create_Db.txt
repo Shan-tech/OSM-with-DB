@@ -1,0 +1,11 @@
+--Table creation
+create table Address_table(
+    id int  PRIMARY KEY AUTO_INCREMENT, 
+    u_name varchar(20), 
+    house_no int, area varchar(50),
+    city varchar(10),country varchar(10),
+    pincode int
+    );
+
+--initialize auto_inc
+ALTER TABLE address_table AUTO_INCREMENT=100;
