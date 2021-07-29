@@ -23,38 +23,38 @@
 
   <body>
     <div id="map"></div>
-    <p>
+    <!-- <p>
       <a href="https://www.maptiler.com/copyright/" target="_blank"
         >&copy; MapTiler</a
       >
       <a href="https://www.openstreetmap.org/copyright" target="_blank"
         >&copy; OpenStreetMap contributors</a
       >
-    </p>
+    </p> -->
 
     <script>
-      <!--set map view-->
-
-        var map = L.map('map').setView([{{c_lati}}, {{c_longi}}], 12);
+      //set map view
+console.log("{{c_lati}}", "{c_longi}")
+console.log("{{lati}}", "{{longi}}")
+        var map = L.map('map').setView(["{{c_lati}}", "{{c_longi}}"], 15);
         L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=fIu21IOdfemm0xICaqLF',{
           tileSize: 512,
           zoomOffset: -1,
           minZoom: 2,
-          attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
+         attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
           crossOrigin: true
         }).addTo(map);
 
-         <!--marker over  -->
-        var marker=L.marker([{{lati}}, {{longi}}]).addTo(map);
+         //marker over 
+        var marker=L.marker(["{{lati}}", "{{longi}}"]).addTo(map);
 
-
-        var circle=L.circle([{{lati}}, {{longi}}],{
+        var circle=L.circle(["{{lati}}","{{longi}}"],{
             color:'green',
             fillColor:'f06',
             fillOpacity: 0.1,
             radius: 1000
         }).addTo(map);
-        marker.bindPopup({{name}});
+        marker.bindPopup("{{name}}");
         circle.bindPopup("1km radius around your place");
     </script>
   </body>

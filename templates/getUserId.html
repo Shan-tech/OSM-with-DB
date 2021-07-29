@@ -2,13 +2,17 @@
 <html>
   <head>
     <title>Map</title>
-    <link rel="stylesheet" href="/static\styles.css" />
+    <link rel="stylesheet" href="../static/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> 
   </head>
-  <body>
-    <form action="/get_id" method="POST">
+  <body style="background-image: url('https://wallpapercave.com/wp/wp2593840.jpg');">
+    <div class="box">
+    <form action="/getUserId" method="POST">
+    
       <h1>View map</h1>
       <p></p>
-      <hr />
+      <br>
+      <div class="ui input">
       <input
         type="text"
         placeholder="Enter user id here"
@@ -16,14 +20,15 @@
         id="address_pincode"
         required
       />
-      <hr />
-      <button type="submit">View map</button>
+      </div>
+      <br><br>
+      <button class="ui teal  button"type="submit">View map</button>
     </form>
-    <br />
-    <hr />
-
+    <br><br>
+    </div>
+    <div  class="box2">
     <h1>User Info in Database</h1>
-
+      <p>Pick id from here! </p>
     <table class="table">
       <tr class="table__header">
         {% for i in header %}
@@ -34,7 +39,7 @@
       <tr class="table__row">
         <td class="table__cell">{{row['id']}}</td>
         <td class="table__cell">{{row['u_name']}}</td>
-        <td class="table__cell">{{row['address']}}</td>
+        <td class="table__cell">{{row['house_no']}}</td>
         <td class="table__cell">{{row['area']}}</td>
         <td class="table__cell">{{row['city']}}</td>
         <td class="table__cell">{{row['pincode']}}</td>
@@ -42,5 +47,6 @@
       </tr>
       {% endfor %}
     </table>
+    </div>
   </body>
 </html>

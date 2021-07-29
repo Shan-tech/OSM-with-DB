@@ -2,25 +2,99 @@
 <html>
   <head>
     <title>User info</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <link rel="stylesheet" href="../static/styles.css" />
   </head>
   <body>
-    <form action="/" method="POST">
-      <h1>Detials</h1>
+  <div class="container">
+    <form action="/"class="form" method="POST">
+        <h1>Detials</h1>
+        <p>Getting user name with address info.</p>
+
+        <!-- <label for="namee"><b>Name</b></label> -->
+        <div class="ui input ">
+      
+        <input type="text" placeholder="Enter Your Name" name="name" id="namee" />
+        </div>
+      <br><br>
+  
+        <!-- <label for="address_no"><b>House no.</b></label> -->
+        <div class="ui input"> 
+          
+        <input
+          type="text"
+          placeholder="address"
+          name="address"
+          id="address_no"
+        />
+        </div>
+        <br><br>
+  
+        <!-- <label for="address_area"><b>Area</b></label> -->
+        <div class="ui input"> 
+          
+        <input
+          type="text"
+          placeholder="area"
+          name="area"
+          id="address_area"
+        />
+        </div>
+  
+        <br><br>
+  
+        <!-- <label for="address_city"><b>City</b></label> -->
+        <div class="ui input" > 
+          
+        <input type="text" placeholder="city" name="city" id="address_city" />
+        </div>
+        <br><br>
+  
+        <!-- <label for="address_country"><b>Country</b></label> -->
+        <div class="ui input"> 
+  
+        <input
+          type="text"
+          placeholder="country"
+          name="country"
+          id="address_country"
+        />
+        </div>
+        <br><br>
+  
+        <!-- <label for="address_pincode"><b>Pincode</b></label> -->
+        <div class="ui input"> 
+  
+        <input
+          type="text"
+          placeholder="pincode"
+          name="pincode"
+          id="address_pincode"
+        />
+        </div>
+        
+        
+        
+        <br><br>
+        <button type="submit"class="ui button blue" value="add" name="button">Add</button>
+        <br><br>
+        <button type="submit" value="map" name="button">Check map</button>
+      <!-- <h1>Detials</h1>
       <p>Getting user name with address info.</p>
-      <hr />
+      
 
-      <label for="name"><b>Name</b></label>
-      <input type="text" placeholder="Enter Your Name" name="name" id="name" />
+      <div class="ui input">
+      <input type="text" placeholder="Enter Your Name" name="name" id="namee" />
       <hr />
-
-      <label for="address_no"><b>Address</b></label>
+      </div>
+      <br><br>
       <input
         type="text"
-        placeholder="24,12 cross,sakthi nagar"
+        placeholder="24"
         name="address"
         id="address_no"
       />
-      <hr />
+      
 
       <label for="address_area"><b>Area</b></label>
       <input
@@ -29,11 +103,11 @@
         name="area"
         id="address_area"
       />
-      <hr />
+      <hr>
 
       <label for="address_city"><b>City</b></label>
       <input type="text" placeholder="Chennai" name="city" id="address_city" />
-      <hr />
+      <hr>
 
       <label for="address_country"><b>Country</b></label>
       <input
@@ -42,7 +116,7 @@
         name="country"
         id="address_country"
       />
-      <hr />
+      <hr>
 
       <label for="address_pincode"><b>Pincode</b></label>
       <input
@@ -52,12 +126,13 @@
         id="address_pincode"
       />
       <hr />
-
-      <p>->DB</p>
       <br />
-      <button type="submit" value="add" name="button">Add</button>
+      <button type="submit"class="ui button blue" value="add" name="button">Add</button>
 
-      <button type="submit" value="map" name="button">Check map</button>
+      <button type="submit" value="map" name="button">Check map</button> -->
     </form>
+    </div>
+    
   </body>
+
 </html>

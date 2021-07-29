@@ -15,3 +15,44 @@ table{
 .table__cell{
     padding: 8px;
 }
+body{
+    background-image: url("https://wallpapercave.com/wp/wp2593840.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+} 
+.container{
+    background-color: rgb(210, 236, 247);
+    width:400px;
+    margin-top:50px;
+    margin-left:450px;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+}
+.box{
+    background-color: rgb(210, 236, 247);
+    width:400px;
+    margin-top:50px;
+    margin-left:450px;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+}
+.box1{
+    background-color: rgb(210, 236, 247);
+    width:1000px;
+    margin-top:50px;
+    margin-left:200px;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+}
+.box2{
+    background-color: rgb(210, 236, 247);
+    width:650px;
+    margin-top:50px;
+    margin-left:25%;
+    border-radius:12px;
+    padding:20px 6%;
+    text-align:center;
+}
